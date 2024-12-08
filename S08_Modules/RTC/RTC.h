@@ -112,13 +112,13 @@
 /*!
 	@brief Seleccionar Prescaler para el RTC
 
-	Esta funcion sirve para seleccionar el prescaler por el que pasara la senal de reloj fuente para generar diferentes tiempos, revisar RTC.md para mas informacion
+	Esta funcion sirve para seleccionar el prescaler por el que pasara la senal de reloj fuente para generar diferentes tiempos, revisar el RM del microcontrolador para verificar las posibles combinaciones
 
 	@param	prescaler_source valor deseado en el prescaler,
 	
 	ejemplo: ePrescaler_1024, para un prescaler de 1024; verificar los valores disponibles en el enum ePrescaler
 	
-	@warning Esta funcion depende de RTC_setClockSource, verificar RTC.md para seleccionar los valores adecuados para su aplicacion
+	@warning Esta funcion depende de RTC_setClockSource, verificar en el RM para revisar las combinaciones posibles
 
 	@return void
 */
@@ -127,7 +127,7 @@ void RTC_setPrescaler(ePrescaler prescaler_source);
 /*!
 	@brief Seleccionar la fuente de reloj para el RTC
 
-	Esta funcion sirve para seleccionar la fuente del reloj para el RTC, revisar RTC.md para mas informacion
+	Esta funcion sirve para seleccionar la fuente del reloj para el RTC
 
 	@param	clock_source seleccion de la fuente de reloj
 
